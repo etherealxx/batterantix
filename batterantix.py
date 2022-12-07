@@ -6,7 +6,7 @@ import getpass
 lowBatteryPercentage = 10
 criticalBatteryPercentage = 4
 
-curdir = os.getcwd()
+curdir = os.path.dirname(os.path.realpath(__file__))
 currentUser = getpass.getuser()
 os.system('zenity --info --text="batterantix sedang berjalan di backround oleh user ' + currentUser + '" --timeout=3')
 def powerFunction():

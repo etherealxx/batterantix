@@ -12,7 +12,7 @@ try:
              
         # terminating process
         os.kill(int(pid), signal.SIGKILL)
-    print("Process Successfully terminated")
+    print("Batterantix Successfully terminated")
          
 except:
-    print("Error Encountered while running script")
+    print("Batterantix process not found/not enough permission")

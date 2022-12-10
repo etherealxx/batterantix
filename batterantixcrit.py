@@ -2,8 +2,10 @@
 import time
 import os
 import getpass
-currentUser = getpass.getuser()
+
 criticalBatteryPercentage = 4
+
+currentUser = getpass.getuser()
 os.system('echo batterantixcrit sedang berjalan di backround oleh user ' + currentUser)
 def powerFunction():
     current_stat=open("/sys/class/power_supply/BAT0/capacity","r").readline().strip()
